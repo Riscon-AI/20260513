@@ -13,6 +13,9 @@ cd fusion-material-ai
 python3 server.py
 ```
 
+웹앱 바로보기 https://fusion-material-ai.vercel.app
+
+터미널 설치시
 브라우저에서 `http://127.0.0.1:8765`를 연다.
 
 CLI 리포트:
