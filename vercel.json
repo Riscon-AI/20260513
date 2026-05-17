@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/index.py"
+    }
+  ],
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 10
+    },
+    "api/screen.py": {
+      "maxDuration": 10
+    },
+    "api/elements.py": {
+      "maxDuration": 10
+    }
+  }
+}
