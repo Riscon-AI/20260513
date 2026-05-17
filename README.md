@@ -31,6 +31,28 @@ python3 run_screen.py \
 - `outputs/screening_report.md`
 - `outputs/screening_result.json`
 
+
+저장소를 내려받기
+터미널 가능하면:
+
+git clone https://github.com/riscon-ai/20260513.git
+cd 20260513
+
+프로젝트 폴더에서 실행
+파일이 저장소 루트에 있으면:
+
+python3 server.py --host 127.0.0.1 --port 8765
+
+만약 fusion-material-ai 폴더 안에 있으면:
+
+cd fusion-material-ai
+python3 server.py --host 127.0.0.1 --port 8765
+
+http://127.0.0.1:8765
+
+파이썬 설치
+python --version
+
 ## 현재 MVP가 하는 일
 
 1. 자연어 프롬프트에서 원소군, W-rich, NbTa-rich, 저방사화, 연성, 밀도 제한을 추출한다.
