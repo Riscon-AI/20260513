@@ -1,27 +1,24 @@
 # Fusion Alloy AI Screener
 
-핵융합로용 차세대 내화 합금 후보를 빠르게 줄이기 위한 DuctGPT형 로컬 프로토타입이다. 자연어 목표를 입력하면 후보 조성을 생성하고, 공개 원소 물성 기반의 physics-informed surrogate로 연성, 고온 적합성, BCC 안정성, 저방사화 가능성, 제조 가능성을 점수화한다.
+핵융합로용 차세대 내화 합금 후보를 빠르게 줄이기 위한 DuctGPT형 프로토타입이다. 자연어 목표를 입력하면 후보 조성을 생성하고, 공개 원소 물성 기반의 physics-informed surrogate로 연성, 고온 적합성, BCC 안정성, 저방사화 가능성, 제조 가능성을 점수화한다.
 
 이 시스템은 실제 신소재 발견을 확정하는 도구가 아니라, DFT·CALPHAD·합성·인장시험으로 넘길 후보를 줄이는 1차 스크리닝 도구다.
+
+실시간 데모: https://fusion-material-ai.vercel.app
 
 ## 실행
 
 웹 앱:
 
 ```bash
-cd fusion-material-ai
 python3 server.py
 ```
 
-웹앱 바로보기 https://fusion-material-ai.vercel.app
-
-터미널 설치시
 브라우저에서 `http://127.0.0.1:8765`를 연다.
 
 CLI 리포트:
 
 ```bash
-cd fusion-material-ai
 python3 run_screen.py \
   --prompt "W-rich low activation ductile BCC alloy for plasma-facing fusion reactor components; prefer W Ti V Zr Ta Nb; density < 15" \
   --samples 2500 \
@@ -33,28 +30,6 @@ python3 run_screen.py \
 - `outputs/top_candidates.csv`
 - `outputs/screening_report.md`
 - `outputs/screening_result.json`
-
-
-저장소를 내려받기
-터미널 가능하면:
-
-git clone https://github.com/riscon-ai/20260513.git
-cd 20260513
-
-프로젝트 폴더에서 실행
-파일이 저장소 루트에 있으면:
-
-python3 server.py --host 127.0.0.1 --port 8765
-
-만약 fusion-material-ai 폴더 안에 있으면:
-
-cd fusion-material-ai
-python3 server.py --host 127.0.0.1 --port 8765
-
-http://127.0.0.1:8765
-
-파이썬 설치
-python --version
 
 ## 현재 MVP가 하는 일
 
