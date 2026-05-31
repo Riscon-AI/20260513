@@ -1,4 +1,4 @@
-# Fusion Alloy AI Screener
+# Fusion Alloy Riscon-AI Screener
 
 핵융합로용 차세대 내화 합금 후보를 빠르게 줄이기 위한 DuctGPT형 프로토타입이다. 자연어 목표를 입력하면 후보 조성을 생성하고, 공개 원소 물성 기반의 physics-informed surrogate로 연성, 고온 적합성, BCC 안정성, 저방사화 가능성, 제조 가능성을 점수화한다.
 
